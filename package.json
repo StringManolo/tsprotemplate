@@ -36,7 +36,8 @@
     "prepare": "husky",
     "docs": "typedoc",
     "docs:serve": "typedoc && npx http-server docs/api -o",
-    "docs:watch": "typedoc --watch"
+    "docs:watch": "typedoc --watch",
+    "vim:tdd": "vim -S .tdd.vim"
   },
   "lint-staged": {
     "*.ts": [
