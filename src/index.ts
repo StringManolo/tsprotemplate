@@ -2,7 +2,7 @@
 
 /**
  * Bahamut Scanner - Command Line Interface
- * 
+ *
  * Main CLI entry point for the vulnerability scanner
  * @module CLI
  * @group CLI
@@ -36,21 +36,21 @@ interface Config {
  */
 function showHelp(): void {
   console.log(`
-Bahamut Help Menu
-=================
+              Bahamut Help Menu
+              =================
 
-Usage: bahamut [options]
+                Usage: bahamut [options]
 
-Options:
-  -h, --help              Show this help menu
-  --version               Show version number
-  --target <url>          Target URL to scan
-  -v, --verbose           Enable verbose mode
+              Options:
+                -h, --help              Show this help menu
+              --version               Show version number
+              --target <url>          Target URL to scan
+              -v, --verbose           Enable verbose mode
 
-Examples:
-  bahamut --target https://example.com
-  bahamut --target https://example.com -v
-`);
+              Examples:
+                bahamut --target https://example.com
+                bahamut --target https://example.com -v
+                `);
 }
 
 /**
@@ -64,44 +64,44 @@ function showVersion(): void {
 
 /**
  * Main CLI entry point for Bahamut Scanner
- * 
+ *
  * Parses command-line arguments and executes the vulnerability scanning process.
  * Handles help display, version display, and target validation before scanning.
- * 
+ *
  * @group CLI
  * @returns Promise that resolves when scanning completes or help/version is displayed
  * @throws {Error} Exits with code 1 if target is missing or invalid
- * 
+ *
  * @example
  * Display help
  * ```bash
  * bahamut --help
  * bahamut -h
  * ```
- * 
+ *
  * @example
  * Show version
  * ```bash
  * bahamut --version
  * ```
- * 
+ *
  * @example
  * Basic scan
  * ```bash
  * bahamut --target https://example.com
  * ```
- * 
+ *
  * @example
  * Verbose scan
  * ```bash
  * bahamut --target https://example.com -v
  * ```
- * 
+ *
  * @public
  */
 export async function main(): Promise<void> {
   const cli = await parseCLI();
-  
+
   // Check for help
   if (cli.s.h || cli.c.help || (cli.o.length > 0 && cli.o[0][0] === 'help') || cli.noArgs) {
     showHelp();
@@ -138,7 +138,7 @@ export async function main(): Promise<void> {
 // Execute only if run directly
 if (import.meta.url === `file://${process.argv[1]}`) {
   main().catch((error) => {
-    console.error('Fatal error:', error);
-    process.exit(1);
-  });
+  console.error('Fatal error:', error);
+process.exit(1);
+});
 }

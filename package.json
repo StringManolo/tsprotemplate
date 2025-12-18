@@ -1,20 +1,20 @@
 {
-  "name": "bahamut",
+  "name": "tsprotemplate",
   "version": "1.0.0",
-  "description": "General Purpouse Vulnerability Scanner",
-  "homepage": "https://github.com/StringManolo/Bahamut#readme",
+  "description": "Template for Professional Typescript Projects",
+  "homepage": "https://github.com/StringManolo/tsprotemplate#readme",
   "engines": {
     "node": ">=20.0.0"
   },
   "bin": {
-    "bahamut": "./dist/index.js"
+    "tsprotemplate": "./dist/index.js"
   },
   "bugs": {
-    "url": "https://github.com/StringManolo/Bahamut/issues"
+    "url": "https://github.com/StringManolo/tsprotemplate/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StringManolo/Bahamut.git"
+    "url": "git+https://github.com/StringManolo/tsprotemplate.git"
   },
   "license": "SEE LICENSE IN LICENSE",
   "author": "StringManolo",
