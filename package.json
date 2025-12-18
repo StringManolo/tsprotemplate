@@ -37,6 +37,8 @@
     "docs": "typedoc",
     "docs:serve": "typedoc && npx http-server docs/api -o",
     "docs:watch": "typedoc --watch",
+    "vim": "vim -S .loader.vim",
+    "vim:force": "vim -u .loader.vim",
     "vim:tdd": "vim -S .tdd.vim"
   },
   "lint-staged": {
