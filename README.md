@@ -76,6 +76,11 @@ The CLI uses `simpleargumentsparser` for argument handling.
 | `npm run docs` | Generate TypeDoc API documentation |
 | `npm run docs:serve` | Generate and serve docs on localhost |
 | `npm run docs:watch` | Watch mode for documentation |
+| `npm run vim` | Open VIM with extra custom settings |
+| `npm run vim:force` | Ignore user settings |
+| `npm run vim:tdd` | Open VIM with extra TDD shortcuts |
+
+> Example: npm run vim # then write: and paste `e src/index.ts | vsp tests/unit/index.test.ts | aboveleft term npm run test:watch`
 
 ## 🏗 Project Structure
 
